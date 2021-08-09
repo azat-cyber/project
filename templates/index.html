@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Information</title>
+</head>
+<body>
+
+    <header class="header">
+        <nav class="nav">
+            <a class="nav__link" href="{% url 'About' %}">About</a>
+            <a class="nav__link" href="{% url 'contacts' %}">Contacts</a>
+        </nav>
+    </header>
+
+    <div class="page">
+        <section class="section">
+            <h2 class="section__title"><a href="https://ru.wikipedia.org/wiki/Django">ABOUT Django (web framework)</a> </h2>
+
+        </section>
+        <img class="image_1" src="https://kigsmtua.github.io/assets/img/django.png" alt="">
+        <p class="text_one">Django (/ˈdʒæŋoʊ/ JANG-goh; sometimes stylized as django)[6] is a Python-based free and open-source web
+            framework that follows the model–template–views (MTV) architectural pattern.[7][8] It is maintained by the
+            Django Software Foundation (DSF), an American independent organization established as a 501(c)(3) non-profit.
+            Django's primary goal is to ease the creation of complex, database-driven websites. The framework emphasizes
+            reusability and "pluggability" of components, less code, low coupling, rapid development, and the principle
+            of don't repeat yourself.[9] Python is used throughout, even for settings, files, and data models. Django
+            also provides an optional administrative create, read, update and delete interface that is generated
+            dynamically through introspection and configured via admin models.
+        </p>
+
+        <section class="section  section--gray">
+            <h2 class="section__title">Directors</h2>
+            <p>
+                Anna Makarudze, President
+                Aaron Bassett, Vice President
+                Chaim Kirby, Secretary
+                William Vincent, Treasurer
+                Kátia Nakamura
+                Mfon Eti-mfon
+                Žan Anderle
+            </p>
+        </section>
+
+
+
+    </div>
+    <script src="script.js"></script>
+
+</body>
+</html>

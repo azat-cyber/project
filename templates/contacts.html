@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <link rel="stylesheet" href="{% static 'checkBox.css' %}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacts</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a class="nav__link" href="{% url 'index' %}">Home</a>
+        </nav>
+    </header>
+    <section class="section1">
+        <div class="create_container">
+            <input
+                class="create_input"
+                type="text"
+                placeholder="Add here"
+            />
+            <button class="create_button">Add</button>
+        </div>
+        <div class="todo_container">
+            <div class="todo_item">
+                <div class="todo_item_header">
+                    <label class="checkbox_container">
+                        <input type="checkbox"/>
+                        <span class="checkmark"></span>
+                    </label>
+                    <h4>Add director</h4>                    
+                </div>
+                <div class="todo_item_footer">
+                    <p>06.08.2021 <span>11:34</span></p>
+                    <div class="action_button">
+                        <img src="unmarked.png" alt="">
+                        <img src="delete.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="todo_item.marked">
+                 <div class="todo_item_header">
+                    <label class="checkbox_container">
+                        <input type="checkbox"/>
+                        <span class="checkmark"></span>
+                    </label>
+                    <h4>Add director</h4>
+                </div>
+                <div class="todo_item_footer">
+                    <p>06.08.2021 <span>11:34</span></p>
+                    <div class="action_button">
+                        <img src="marked.jpg" alt="">
+                        <img src="delete.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="todo_item.done">
+                 <div class="todo_item_header">
+                    <label class="checkbox_container">
+                        <input type="checkbox"/>
+                        <span class="checkmark"></span>
+                    </label>
+                    <h4>Add director</h4>
+                </div>
+                <div class="todo_item_footer">
+                    <p>06.08.2021 <span>11:34</span></p>
+                    <div class="action_button">
+                        <img src="unmarked.png">
+                        <img src="delete.png">
+                    </div>
+                </div>
+            </div>
+
+            <div class="todo_item.marked">
+                 <div class="todo_item_header">
+                    <label class="checkbox_container">
+                        <input type="checkbox"/>
+                        <span class="checkmark"></span>
+                    </label>
+                    <h4>Add director</h4>
+                </div>
+                <div class="todo_item_footer">
+                    <p>06.08.2021 <span>11:34</span></p>
+                    <div class="action_button">
+                        <img src="marked.jpg">
+                        <img src="delete.png">
+                    </div>
+                </div>
+            </div>
+
+            <div class="todo_item">
+                 <div class="todo_item_header">
+                    <label class="checkbox_container">
+                        <input type="checkbox"/>
+                        <span class="checkmark"></span>
+                    </label>
+                    <h4>Add director</h4>
+                </div>
+                <div class="todo_item_footer">
+                    <p>06.08.2021 <span>11:34</span></p>
+                    <div class="action_button">
+                        <img src="unmarked.png">
+                        <img src="delete.png">
+                    </div>
+                </div>
+            </div>
+
+            <div class="todo_item.done">
+                 <div class="todo_item_header">
+                    <label class="checkbox_container">
+                        <input type="checkbox"/>
+                        <span class="checkmark"></span>
+                    </label>
+                    <h4>Add director</h4>
+                </div>
+                <div class="todo_item_footer">
+                    <p>06.08.2021 <span>11:34</span></p>
+                    <div class="action_button">
+                        <img src="marked.jpg">
+                        <img src="delete.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="page">
+        <section class="section section--gray">
+            <h1 class="section__title"><a href="https://www.djangoproject.com/foundation/">Django Software Foundation</a></h1>
+            <p><h3>Members</h3>
+                The Django Software Foundation would not be able to operate without the generous financial support of our corporate members.
+                If you are interested in becoming a corporate member of the DSF, you can find out more on our corporate membership page
+
+                <h3>Individual Members</h3>
+                Individual members are appointed to the Django Software Foundation in recognition of their contributions to the Django community.
+                If you know of someone that you think should be a member, including yourself, please fill out this form and the DSF membership will enter them into consideration.
+
+                <h3>Support for events</h3>
+                The DSF is happy to provide financial and other support to Django events around the world. Find out how the DSF can support your conference or other event.
+
+                <h3>Code of Conduct requirement</h3>
+                The DSF will only endorse or support events which publish and adhere to a suitable Code of Conduct.
+
+                <h3>Prizes</h3>
+                The DSF awards prizes to recognize the contributions of volunteers in the Django community.
+
+
+        </section>
+
+    </div>
+</body>
+</html>
