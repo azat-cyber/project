@@ -24,7 +24,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path("", homepage, name="index"),
     path("second/", contacts, name="contacts"),
-    path("fisrt/", about, name="about")
+    path("fisrt/", about, name="About")
 ]
 if settings.DEBUG:
     urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

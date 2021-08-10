@@ -6,9 +6,10 @@ def homepage(request):
 
 
 def about(request):
-    test_list = Test.objects.all()
-    return render(request, "about.html", {"test_listUse": test_list})
+
+    return render(request, "about.html")
 
 
 def contacts(request):
-    return render(request, "contacts.html")
+    test_list = Test.objects.all()
+    return render(request, "contacts.html", {"test_listUse": test_list})
