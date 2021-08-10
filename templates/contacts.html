@@ -16,12 +16,17 @@
     </header>
     <section class="section1">
         <div class="create_container">
-            <input
-                class="create_input"
-                type="text"
-                placeholder="Add here"
-            />
-            <button class="create_button">Add</button>
+            <form action="{% url 'add-todo' %}" method="post">
+                {% csrf_token %}
+                <input
+                    class="create_input"
+                    type="text"
+                    placeholder="Add here"
+                    name="text_todo"
+                />
+                <button class="create_button">Add</button>
+            </form>
+
         </div>
         <div class="todo_container">
             {% for todo in test_listUse %}
