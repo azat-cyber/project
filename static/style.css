@@ -62,3 +62,6 @@ body {
 .section--gray {
     background-color: #f8f8f8;
 }
+
+.todo_item h4 a {
+    text-decoration: none;

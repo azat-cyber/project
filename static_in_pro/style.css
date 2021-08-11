@@ -105,7 +105,9 @@ body {
     background-color: #ffefef;
     border: 2px solid #ffefef;
 }
-
+.todo_item h4 a {
+    text-decoration: none;
+}
 .todo_item_header {
     display: flex;
     align-items: center;
