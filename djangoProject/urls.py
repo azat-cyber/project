@@ -26,6 +26,7 @@ urlpatterns = [
     path("second/", contacts, name="contacts"),
     path("fisrt/", about, name="About"),
     path("add-todo/", add_todo, name="add-todo"),
+    path("delete-todo/<id>", delete_todo, name="delete-todo"),
 ]
 if settings.DEBUG:
     urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

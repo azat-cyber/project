@@ -20,3 +20,8 @@ def add_todo(request):
     todo = Test(text=text)
     todo.save()
     return redirect(contacts)
+
+def delete_todo(request, id):
+    todo = Test.objects.get(id=id)
+    todo.delete()
+    return redirect(contacts)

@@ -18,12 +18,15 @@
         <div class="create_container">
             <form action="{% url 'add-todo' %}" method="post">
                 {% csrf_token %}
-                <input
-                    class="create_input"
-                    type="text"
-                    placeholder="Add here"
-                    name="text_todo"
-                />
+                <label>
+                    <input class="create_input"
+                           type="text"
+                           placeholder="Add here"
+                           name="text_todo"
+                    />
+                </label>
+
+
                 <button class="create_button">Add</button>
             </form>
 
@@ -42,7 +45,7 @@
                     <p>{{ todo.created_at}}</p>
                     <div class="action_button">
                         <img src="{% static 'unmarked.png' %}" />
-                        <img src=" {% static 'delete.png' %}" />
+                        <a href="{% url 'delete-todo' todo.id %}"><img src="{% static 'delete.png' %}" /></a>
                     </div>
                     </div>
                 </div>
